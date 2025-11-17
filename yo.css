@@ -1,0 +1,26 @@
+body {
+    background-color: red;
+}
+.nav a{
+    color: aliceblue;
+    text-decoration: underline;
+    padding: 20px 20px;
+    border-radius: 8px;
+    position: center;
+    top: 0px;
+}
+.main {
+    background-color: aliceblue;
+    color: blue;
+    height: 200px;vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: absolute;
+    border-radius: 8px;
+    font-size: 50px;
+    padding: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
