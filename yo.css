@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+ background-color: #70819e;
 }
 .nav a{
     color: aliceblue;
@@ -11,8 +11,7 @@ body {
 }
 .main {
     background-color: aliceblue;
-    color: blue;
-    height: 200px;vh;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -20,9 +19,11 @@ body {
     border-radius: 8px;
     font-size: 50px;
     padding: 20px;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
+    height: auto;
+    background: linear-gradient(#ff0000, #ffffff, #0000ff);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .info {
     height: 70px;
@@ -35,14 +36,20 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+    background: linear-gradient(to left, #ff0000, #0000ff);
 }
 .why {
-    background-color: brown;
+    height: 70px;
+    background-color: purple;
     position: sticky;
-    top: 100px;
-    left: 100px;
     border-radius: 100px;
-    justify-content: space-around;
+    justify-content: ;
     align-items: center;
     padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background: linear-gradient(to left, #ff0000, #0000ff);
+
+
 }
