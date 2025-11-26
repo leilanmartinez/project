@@ -11,7 +11,7 @@ body {
 }
 .main {
     background-color: aliceblue;
-    color: rgb(255, 255, 255);
+    color: black;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -23,33 +23,33 @@ body {
     margin-right: auto;
     height: auto;
     background: linear-gradient(#ff0000, #ffffff, #0000ff);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
 }
 .info {
     height: 70px;
     background-color: purple;
     position: sticky;
     border-radius: 100px;
-    justify-content: ;
     align-items: center;
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     background: linear-gradient(to left, #ff0000, #0000ff);
+    font-size: 45px;
 }
-.why {
+.Why {
     height: 70px;
     background-color: purple;
-    position: sticky;
     border-radius: 100px;
-    justify-content: ;
     align-items: center;
     padding: 50px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     background: linear-gradient(to left, #ff0000, #0000ff);
-
+    font-size: 45px;
+    position: sticky;
+    margin-bottom: ;
 
 }
