@@ -1,7 +1,7 @@
 body {
  background-color: #70819e;
 }
-.navbar{
+.navbar:active {
     color: aliceblue;
     text-decoration: underline;
     padding: 20px 20px;
