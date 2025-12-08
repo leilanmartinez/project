@@ -1,45 +1,27 @@
 body {
-    background-color:  rgb(75, 5, 238);
-    background: radial-gradient(circle, #4a01a3, #1d1c1c);
+    background: linear-gradient(45deg, #2c3e50, #6a2c84, #2c3e50);
+    color: #333333;
 }
-.navbar a:hover {
-    background-color: #000000;
-    color: white;
-}
-.main {
-    color: rgb(128, 0, 178);
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    border-radius: 8px;
-    font-size: 50px;
-    padding: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    font-family: cursive;
-    background: linear-gradient(#630000, #ffffff, #000000);
-    animation: rad 3s infinite;
-}
+
 .info {
-    color: rgb(255, 255, 255);
+    background-color: #ecf0f1;
     height: 70px;
-    background-color: rgb(0, 0, 0);
     position: sticky;
     border-radius: 25px;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    background: linear-gradient(to left, #000000, #ffffff);
     font-size: 30px;
     justify-content: space-evenly;
     margin-top: auto;
     margin-bottom: auto;
     padding: 50px;
-    border: 5px solid #7f7f7f;
     cursor: zoom-in;
+    background: linear-gradient(to right, #8930a4, #422d77);
+    color: #ffffff;
+    border: 3px solid #000000;
+
 }
 .Why {
     color: white;
@@ -51,38 +33,125 @@ body {
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    background: linear-gradient(to left, #ffffff, #000000);
     font-size: 30px;
     position: sticky;
     justify-content: space-evenly;
     margin-top: 10px;
     margin-bottom: 50px;
-    border: 5px solid #4b4b4b;
+    animation: slideIn 1.5s ease-out;
+    background: linear-gradient(to left, #150a77b0, #652c9b91);
+    color: white;
+    border: 3px solid #0f3460;
 
 }
 li:hover {
     transform: scale(1.05);
     transition: transform 0.2s;
 }
-h1:hover {
-    color: rgb(79, 76, 76);
-    transition: color 0.3s;
-}
 .footer:hover {
-    background-color: #000000;
+    background-color: #ffffff;
     transition: background-color 0.5s;
 }
-@keyframes radialGradient-pulse {
-    0% { filter: hue-rotate(0deg) brightness(1); }
-    50% { filter: hue-rotate(180deg) brightness(1.5); }
-    100% { filter: hue-rotate(360deg) brightness(1); }
+.footer {
+    background-color: #18056d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    border: 3px solid #6d329a;
+    font-size: 18px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 15px auto;
+    box-shadow: 0 5px 15px rgba(198, 135, 135, 0.3);
+     background: linear-gradient(45deg, #8e44ad, #3498db, #b04236, #ce12f3);
+    background-size: 400% 400%;
+    animation: gradientShift 4s ease infinite;
 }
 
-h1 {
-    text-shadow: 0 0 20px #313131, 0 0 40px #ffffff;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin: 0 8px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.4s;
+    position: relative;
 }
 
-h1:hover {
-    transform: scale(1.2);
-    text-shadow: 0 0 30px #000000;
+.navbar a:hover {
+    background-color: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+}
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulseGlow {
+    from { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+    to { box-shadow: 0 0 40px rgba(93, 62, 124, 0.8); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+.info {
+    animation: slideIn 1s ease-out;
+}
+.main {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 50px;
+    padding: 40px;
+    margin: 20px auto;
+    height: 300px;
+    font-family: cursive;
+    animation: mainPulse 3s ease-in-out infinite;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+     background: linear-gradient(135deg, #724197, #3773c6);
+}
+
+.main h1 {
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    font-weight: bold;
+}
+
+.main p {
+    font-size: 20px;
+    margin-top: 15px;
+    opacity: 0.9;
+}
+
+@keyframes mainPulse {
+    0% { 
+        transform: scale(1);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
+    50% { 
+        transform: scale(1.02);
+        box-shadow: 0 20px 50px rgba(142, 71, 213, 0.6);
+    }
+    100% { 
+        transform: scale(1);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+    }
 }
